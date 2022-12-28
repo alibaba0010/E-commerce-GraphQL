@@ -10,6 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Zakariyah Ali",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.11.1",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.8.1"
+  }
 }
