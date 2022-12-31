@@ -3,5 +3,5 @@ export const Product = {
     categories.find((category) => category.id === categoryId),
 
   reviews: ({ id }, args, { reviews }) =>
-    reviews.find((review) => review.id === id),
+    reviews.filter((review) => review.productId === id),
 };
