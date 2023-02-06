@@ -13,10 +13,8 @@ const server = new ApolloServer({
   context: { categories, products, reviews },
 });
 
-async function startServer() {
-  await server.listen(PORT, () =>
-    console.log(` 🚀 Server listening on port http://localhost:${PORT} 🚀 `)
+(async () => {
+  server.listen(PORT, () =>
+    console.log(`Listening to port http://localhost:${PORT}`)
   );
-}
-
-startServer();
+})();
